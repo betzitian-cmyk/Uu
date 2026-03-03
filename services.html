@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service, Booking & Requests | Velocity Broker House</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="page-transition" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">Velocity Broker House</a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="consignment.html">Consignment</a>
+      <a href="warranties.html">Warranties</a>
+      <a href="financing.html">Financing</a>
+      <a href="services.html" class="active">Service + Booking</a>
+    </nav>
+  </header>
+  <main class="section-pad">
+    <h1>Booking & Request Center</h1>
+    <div class="forms-grid">
+      <form class="card form" id="test-drive">
+        <h2>Book a Test Drive</h2>
+        <label>Name <input type="text" required /></label>
+        <label>Vehicle Interested In <input type="text" required /></label>
+        <label>Date <input type="date" required /></label>
+        <label>Time <input type="time" required /></label>
+        <button class="btn" type="submit">Book Test Drive</button>
+      </form>
+
+      <form class="card form" id="request-car">
+        <h2>Request a Special Find</h2>
+        <label>Make / Model <input type="text" required /></label>
+        <label>Year Range <input type="text" placeholder="e.g. 2021-2024" required /></label>
+        <label>Budget <input type="number" required /></label>
+        <label>Must-Have Features <textarea required></textarea></label>
+        <button class="btn" type="submit">Send Vehicle Request</button>
+      </form>
+
+      <form class="card form">
+        <h2>Repairs / Oil Change / Tune-Up</h2>
+        <label>Vehicle VIN (optional) <input type="text" /></label>
+        <label>Service Type
+          <select>
+            <option>Oil Change</option>
+            <option>Tune-Up</option>
+            <option>Brake Service</option>
+            <option>Diagnostic / Repair</option>
+            <option>Pre-Pickup Inspection</option>
+          </select>
+        </label>
+        <label>Preferred Date <input type="date" required /></label>
+        <label>Additional Notes <textarea></textarea></label>
+        <button class="btn" type="submit">Submit Service Request</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

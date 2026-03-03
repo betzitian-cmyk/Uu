@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financing Widget | Velocity Broker House</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="page-transition" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">Velocity Broker House</a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="consignment.html">Consignment</a>
+      <a href="warranties.html">Warranties</a>
+      <a href="financing.html" class="active">Financing</a>
+      <a href="services.html">Service + Booking</a>
+    </nav>
+  </header>
+  <main class="section-pad two-col">
+    <section>
+      <h1>Financing Widget</h1>
+      <p class="lede">Estimate monthly payment and submit a quick application. We support all credit profiles.</p>
+      <form class="card form" id="finance-calc">
+        <label>Vehicle Price <input type="number" id="price" value="35000" required /></label>
+        <label>Down Payment <input type="number" id="down" value="3000" required /></label>
+        <label>APR (%) <input type="number" id="apr" value="8.5" step="0.1" required /></label>
+        <label>Term (Months) <input type="number" id="term" value="72" required /></label>
+        <button class="btn" type="submit">Calculate Payment</button>
+        <p id="payment-result" class="result">Estimated payment: --</p>
+      </form>
+    </section>
+    <section>
+      <h2>Apply in Minutes</h2>
+      <form class="card form">
+        <label>Full Name <input type="text" required /></label>
+        <label>Email <input type="email" required /></label>
+        <label>Phone <input type="tel" required /></label>
+        <label>Credit Profile
+          <select>
+            <option>Excellent (720+)</option>
+            <option>Good (680-719)</option>
+            <option>Fair (620-679)</option>
+            <option>Challenged (&lt;620)</option>
+          </select>
+        </label>
+        <label>Notes <textarea placeholder="Tell us your budget and preferred vehicle"></textarea></label>
+        <button class="btn" type="submit">Submit Application</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
